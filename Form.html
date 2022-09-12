@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store Sales Prediction</title>
+<style>
+h1 {text-align: center;}
+h3 {text-align: center;}
+p {text-align: left;}
+</style>
+
+
+</head>
+<body>
+<h1 class="center">Store Sales Prediction Application</h1>
+<h3>-Created using Django API <h3/>
+<p><br><br><br>This Application predicts the number of units which will be sold of a particular item at a supermarket/Grocery Store.</p>
+
+<p>Please Enter the weight of the item = </p>
+
+
+<form method='POST'>
+
+  <label for="quantity">Item Weight: </label>
+  <input type="number" id="quantity" name="item_weight" min="1" max="10000">
+
+
+
+<p>Enter the fat levels for your item:</p>
+
+  <input type="radio" id="LF" name="item_fat" value=0>
+  <label for="html">Low Fat</label><br>
+  <input type="radio" id="R" name="item_fat" value=1>
+  <label for="Regular">Regular</label><br>
+
+
+<p>Enter the visibility of your item =</p>
+
+
+  <label for="quantity">Item Visibility: </label>
+  <input type="number" id="quantity" name="item_vis" min="1" max="1000">
+
+
+
+<p>Enter the MRP of your item =</p>
+
+
+  <label for="MR">Item MRP: </label>
+  <input type="number" id="qEm" name="item_mrp" min="1" max="1000000">
+
+
+
+<p>Select the type of outlet the item is in:</p>
+
+
+  <input type="radio" id="LF" name="outlet_type" value=0>
+  <label for="html">Grocery Store</label><br>
+
+  <input type="radio" id="R" name="outlet_type" value=1>
+  <label for="Regular">Supermarket Type1</label><br>
+
+  <input type="radio" id="R" name="outlet_type" value=2>
+  <label for="Regular">Supermarket Type2</label><br>
+
+  <input type="radio" id="R" name="outlet_type" value=3>
+  <label for="Regular">Supermarket Type3</label><br>
+
+
+
+<p>Select the type the item is of :</p>
+
+
+  <input type="radio" id="LF" name="item_type" value=0>
+  <label for="html">Dairy</label><br>
+
+  <input type="radio" id="R" name="item_type" value=1>
+  <label for="Regular">Soft Drinks</label><br>
+
+  <input type="radio" id="R" name="item_type" value=2>
+  <label for="Regular">Meat</label><br>
+
+  <input type="radio" id="R" name="item_type" value=3>
+  <label for="Regular">Fruits and Vegetables</label><br>
+
+  <input type="radio" id="R" name="item_type" value=4>
+  <label for="Regular">Household</label><br>
+
+  <input type="radio" id="R" name="item_type" value=5>
+  <label for="Regular">Baking Goods</label><br>
+
+  <input type="radio" id="R" name="item_type" value=6>
+  <label for="Regular">Snack Foods</label><br>
+
+  <input type="radio" id="R" name="item_type" value=7>
+  <label for="Regular">Frozen Foods</label><br>
+
+  <input type="radio" id="R" name="item_type" value=8>
+  <label for="Regular">Breakfast</label><br>
+
+  <input type="radio" id="R" name="item_type" value=9>
+  <label for="Regular">Health and Hygiene</label><br>
+
+  <input type="radio" id="R" name="item_type" value=10>
+  <label for="Regular">Hard Drinks</label><br>
+
+  <input type="radio" id="R" name="item_type" value=11>
+  <label for="Regular">Canned</label><br>
+
+  <input type="radio" id="R" name="item_type" value=12>
+  <label for="Regular">Breads</label><br>
+
+  <input type="radio" id="R" name="item_type" value=13>
+  <label for="Regular">Starchy Foods</label><br>
+
+  <input type="radio" id="R" name="item_type" value=14>
+  <label for="Regular">Others</label><br>
+
+  <input type="radio" id="R" name="item_type" value=15>
+  <label for="Regular">Seafood</label><br>
+
+
+
+<p>Select the outlet location type where the item is to be sold:</p>
+
+
+  <input type="radio" id="LF" name="outlet_tier" value=0>
+  <label for="html">Tier 1</label><br>
+
+  <input type="radio" id="R" name="outlet_tier" value=1>
+  <label for="Regular">Tier 2</label><br>
+
+  <input type="radio" id="R" name="outlet_tier" value=2>
+  <label for="Regular">Tier 3</label><br>
+
+
+  <button type="submit">Submit/Press here(to change this change the html file)</button>
+
+</form>
+
+  <p>
+  The number of sales is {{ prediction }}
+  </p>>
+
+
+
+</body>
+</html>
