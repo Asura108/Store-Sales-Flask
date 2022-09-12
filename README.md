@@ -16,3 +16,9 @@ Ran_for -   Pickle file/saved model used in the project.
 
 Procfile - necessary file used for Heroku.
 
+Test.csv - data set for testing the accuracy of the model in .csv format.
+
+Train.csv - data set for training the model in .csv format.
+
+Project Python File.ipynb - This is the python file in which i imported my data and trained my ML model. I trained 3 algorithms(Linear regression, Decision trees and Random forest ) and saved them on my desktop using pickle library. I then used all 3 models (in my webapp) and used the mean of the values obtained using the 3 models to get my final MRP of a store item.
+
